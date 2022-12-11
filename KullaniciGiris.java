@@ -30,6 +30,7 @@ public class KullaniciGiris {
                    break;
                case "H":
                    System.out.println(("Lütfen tekrar deneyiniz!"));
+                   break;
            }
        }
     }
