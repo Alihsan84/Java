@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class ManavKasaProgram {
     public static void main(String[] args) {
-        double armut,elma,domates,muz,patlican,toplamTutar;
-        double armutFiyat=2.14,elmaFiyat=3.67,domatesFiyat=1.11,muzFiyat=0.95,patlicanFiyat=5;
+        double armut, elma, domates, muz, patlican, totalPrice;
+        double armutPrice=2.14, elmaPrice=3.67, domatesPrice=1.11, muzPrice=0.95, patlicanPrice=5.00;
 
         Scanner input = new Scanner(System.in);
         System.out.print("Armut kaç kilo ? :");
@@ -17,8 +17,8 @@ public class ManavKasaProgram {
         System.out.print("Patlıcan kaç kilo ? :");
         patlican =input.nextDouble();
 
-        toplamTutar = (armut*armutFiyat)+(elma*elmaFiyat)+(domates*domatesFiyat)+(muz*muzFiyat)+(patlican*patlicanFiyat);
+        totalPrice = (armut*armutPrice)+(elma*elmaPrice)+(domates*domatesPrice)+(muz*muzPrice)+(patlican*patlicanPrice);
 
-        System.out.println("Toplam Tutar :"+toplamTutar);
+        System.out.println("Toplam Tutar :"+totalPrice);
     }
 }
