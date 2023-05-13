@@ -2,18 +2,18 @@ import java.util.Scanner;
 
 public class VucutKitleEndeksiHesaplama {
     public static void main(String[] args) {
-        double boy,endeks;
-        int kilo;
+        double kilo, size, massIndex;
+        
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Lütfen kilonuzu giriniz : ");
+        kilo = inp.nextDouble();
+        System.out.print("Lütfen boyunuzu (metre cinsinde) giriniz : ");
+        size = inp.nextDouble();
+        
+        massIndex=kilo/(size*size);
 
-        Scanner input = new Scanner(System.in);
-        System.out.print("Lütfen Boyunuzu(metre cinsinden) Giriniz : ");
-        boy = input.nextDouble();
-        System.out.print("Lütfen Kilonuzu Giriniz : ");
-        kilo = input.nextInt();
+        System.out.println("Vücut Kitle Endeksiniz : "+massIndex);
 
-        endeks = kilo/(boy*boy);
-
-        System.out.println("Vücut Kitle Endeksiniz : "+ endeks);
 
     }
 }
